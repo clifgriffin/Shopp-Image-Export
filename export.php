@@ -1,5 +1,11 @@
 <?php
-//EDIT THIS LINE
+// Copyright 2011, Clifton H. Griffin II
+// This script is DESTRUCTIVE.  It will delete all images in your database! 
+// Run at your own risk. It is provided with NO WARRANTY WHATSOEVER. 
+// Please read carefully and do a full backup before using!
+// Test with Shopp 1.0.14
+
+//EDIT THIS LINE (this directory must be writeable)
 $path = "/var/www/vhosts/domain.com/httpdocs/wp-content/uploads/shopp";
 
 //Load WP data objects
