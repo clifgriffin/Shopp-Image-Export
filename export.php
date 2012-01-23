@@ -19,9 +19,9 @@ $results = $wpdb->get_results($sql, "ARRAY_A");
 foreach ($results as $row)
 {
 	$id = $row['id'];
-	$therow = $wpdb->get_row("SELECT name, data FROM wp_shopp_asset WHERE id = $id", "ARRAY_A");
+	$therow = $wpdb->get_row("SELECT data FROM wp_shopp_asset WHERE id = $id", "ARRAY_A");
 	$image = $therow["data"];
-	$name = $therow["name"];
+	$name = "image" . "_" . $id .".jpg";
 	
 	echo "File name: ".$path."$name <br />";
 	$file = fopen($path."$name","w");
